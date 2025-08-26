@@ -18,11 +18,8 @@ A simple linear calibration fixed this.
   `sanity_check.py`, `plot_trajectories.py`) for training/evaluation and plotting.
 
 ## Notes
-- Per-fold correlations can be unstable when test sets are tiny, so we emphasize **global (micro)**
-  metrics for the headline numbers.
-- User identifiers are anonymized. The private mapping (`user_id_mapping.csv`, `user_id_legend.txt`)
-  is **not** included in the repo.
+- Headline numbers are **micro** because per-fold ρ is unstable with tiny test sets.
+- User IDs are anonymized to **U01, U02, …**; the private mapping is not in the repo.
 
-## Reproduce (from predictions)
-If you have local raw predictions, you can run the metric and calibration scripts
-to regenerate the CSVs; otherwise, use the anonymized CSVs here directly for analysis/plots.
+## Reproduce
+Use `reports/*_anon.csv` directly. (Optional: `python plot_trajectories.py` for figures.)
