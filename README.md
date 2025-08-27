@@ -6,9 +6,7 @@ A simple linear calibration fixed this.
 ## Headline (micro)
 - **Raw:** MAE 1.81, RMSE 2.28, ρ −0.35  
 - **Post-hoc calibration:** MAE 1.42, RMSE 1.71, ρ +0.35  
-- **Cross-validated calibration (no leakage):** ← paste your `CVCAL-> ...` line here
-
-**Calibration mapping:**  ŷ = 12.893 − 1.403 × ŷ_raw  (then clipped to [1, 7])
+- **Calibration mapping:**  ŷ = 12.893 − 1.403 × ŷ_raw  (then clipped to [1, 7])
 
 ## What’s in this repo
 - `reports/*_anon.csv` — anonymized predictions & per-user summaries (IDs are `U01, U02, …`)
